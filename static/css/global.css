@@ -1,0 +1,153 @@
+/**
+ * 人人站CMS
+ * ============================================================================
+ * 版权所有 2015-2030 山东康程信息科技有限公司，并保留所有权利。
+ * 网站地址: http://www.rrzcms.com
+ * ----------------------------------------------------------------------------
+ * 如果商业用途务必到官方购买正版授权, 以免引起不必要的法律纠纷.
+ * ============================================================================
+ */
+fieldset,html,img{border:0}
+body,form,html{margin:0;padding:0}
+body{color:#000;background-color:#fff}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:14px}
+ol,ul{margin:0;padding:5px 5px 5px 40px}
+dl,p{margin:0;padding:5px 0}
+a,a:link{color:#000;text-decoration:none}
+.rectbox:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.rectbox{clear:both}
+.rectbox .left{float:left}
+.rectbox .right{float:right}
+textare{overflow-y:visible}
+label{cursor:pointer}
+input[type=submit]{cursor:pointer}
+input[type=button]{cursor:pointer}
+input[type=reset]{cursor:pointer}
+input.submit{cursor:pointer}
+input.button{cursor:pointer}
+input.reset{cursor:pointer}
+input.disabled{cursor:default}
+input.readonly{color:#999;border:1px solid #ccc;background:#f3f3f3}
+input[readOnly]{color:#999;border:1px solid #ccc;background:#f3f3f3}
+*html input{direction:expression(function(sjd) {
+ if(document.readyState=="complete") {
+ sjd.style.direction = "ltr";
+ sjd.className += " "+sjd.type;
+}
+
+}
+
+(this));unicode-bidi:expression(function(sjd) {
+ if(document.readyState=="complete") {
+
+				if(sjd.readOnly == true) {
+ if(sjd.className.search(" readonly")==-1) {
+sjd.className += " readonly";
+}
+
+}
+
+ else {
+if(sjd.className.search(" readonly")!=-1) {
+sjd.className = sjd.className.replace(" readonly", "")
+}
+
+}
+
+
+				if(sjd.disabled == true) {
+ if(sjd.className.search(" disabled")==-1) {
+sjd.className += " disabled";
+}
+
+}
+
+ else {
+if(sjd.className.search(" disabled")!=-1) {
+sjd.className = sjd.className.replace(" disabled", "")
+}
+
+}
+
+}
+
+}
+
+(this))}
+*html html{direction:expression(function(el) {
+ el.style.direction = "ltr";
+ try {
+document.execCommand('BackgroundImageCache', false, true);
+}
+
+catch(e) {
+}
+
+}
+
+(this))}
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+:focus{outline:0}
+ins{text-decoration:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+.bt:hover,.bt:hover *{cursor:pointer;text-decoration:none;opacity:.8}
+.bt:hover.lt,.bt:hover.lt *{opacity:.95}
+.bt:hover.gt,.bt:hover.gt *{opacity:.6}
+.clear{clear:both}
+.flex{display:flex}
+.flex.lt{width:105%}
+.flex.gt{width:125%}
+.ht05{height:5px}
+.ht10{height:10px}
+.ht15{height:15px}
+.ht20{height:20px}
+.ht25{height:25px}
+.ht30{height:30px}
+.ht35{height:35px}
+.ht40{height:40px}
+.ht45{height:45px}
+.ht50{height:50px}
+.ht55{height:55px}
+.ht60{height:60px}
+.ht65{height:65px}
+.ht70{height:70px}
+.ht75{height:75px}
+.ht80{height:80px}
+.ht85{height:85px}
+.ht90{height:90px}
+.ht95{height:95px}
+.ht100{height:100px}
+.ht200{height:200px}
+.ht300{height:300px}
+.ht400{height:400px}
+.ht500{height:500px}
+.wh05{display:inline-block;width:5px}
+.wh10{display:inline-block;width:10px}
+.wh15{display:inline-block;width:15px}
+.wh20{display:inline-block;width:20px}
+.wh25{display:inline-block;width:25px}
+.wh30{display:inline-block;width:30px}
+.wh35{display:inline-block;width:35px}
+.wh40{display:inline-block;width:40px}
+.wh45{display:inline-block;width:45px}
+.wh50{display:inline-block;width:50px}
+.wh55{display:inline-block;width:55px}
+.wh60{display:inline-block;width:60px}
+.wh65{display:inline-block;width:65px}
+.wh70{display:inline-block;width:70px}
+.wh75{display:inline-block;width:75px}
+.wh80{display:inline-block;width:80px}
+.wh85{display:inline-block;width:85px}
+.wh90{display:inline-block;width:90px}
+.wh95{display:inline-block;width:95px}
+.wh100{display:inline-block;width:100px}
+.none{display:none}
+.hide{opacity:0}
+.ie-radius{border-radius:5px;behavior:url(css/ie-css3.htc)}
+.f_left{float:left}
+.f_right{float:right}

@@ -1,0 +1,471 @@
+body{font-family:微软雅黑,"Open Sans",sans-serif;font-size:14px;color:#333}
+input,select,textarea{font-family:微软雅黑,"Open Sans",sans-serif;font-size:1em}
+.wrap{width:100%;max-width:1180px;margin:0 auto;position:relative}
+a,img{border:0}
+li,ul{list-style:none}
+*,:after,:before{margin:0;padding:0;transition:all .5s}
+.flt{float:left}
+.frt{float:right}
+.clear{clear:both}
+.clear:after,.clear:before{content:'';clear:both;display:table}
+img{max-width:100%}
+.header{height:78px;line-height:78px;background:#fff;border-bottom:2px solid #f1f1f1;position:fixed;top:0;left:0;width:100%;z-index:100}
+.header .logo{float:left}
+.header .logo img{vertical-align:middle;margin-bottom:3px}
+.header .nav{float:right}
+.header .nav ul li{float:left;margin-left:45px;font-size:16px;color:#222}
+.header .nav ul li a{display:block;color:#222}
+.header .nav ul li a:hover,.header .nav ul li.on a{color:#00b0a0;border-bottom:2px solid #00b0a0}
+.mainer{padding-bottom:70px;padding-top:1px;margin-top:78px}
+.main_index{padding:0}
+.banner{position:relative}
+.cur{height:0;position:absolute;top:50%;margin-top:-30px;left:5%;right:5%;z-index:210}
+.cur span{display:block;cursor:pointer;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/cur1.png) no-repeat center center;width:60px;height:60px;opacity:.5}
+.cur span.prev{float:left}
+.cur span.next{float:right;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/cur2.png) no-repeat center center}
+.cur span:hover{opacity:1}
+.banner .item{position:relative}
+.banner .item .text{position:absolute;top:50%;margin-top:-75px;text-align:center;font-size:30px;color:#666;left:0;width:100%}
+.banner .item .text h2{font-size:2.7em;line-height:80px;font-weight:400;margin-bottom:.5em;color:#333}
+.owl.owl-theme .owl-dots .owl-dot span{width:40px;height:5px;border-radius:0;margin:0 20px;position:relative;background:#000;opacity:.4}
+.banner .owl-dots{counter-reset:nav}
+.owl.owl-theme .owl-dots .owl-dot.active span,.owl.owl-theme .owl-dots .owl-dot:hover span{background:#00b0a0;opacity:1}
+.owl.owl-theme .owl-dots .owl-dot.active span:before,.owl.owl-theme .owl-dots .owl-dot:hover span:before{opacity:1}
+.banner .owl-theme .owl-controls{bottom:5%}
+.page_num{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/bg1.jpg) no-repeat center center;background-size:cover;padding:20px 0}
+.page_num ul li{border-left:1px solid rgba(255,255,255,.3);margin-left:-1px;width:25%;float:left;padding:25px 0;text-align:center;color:#fff;font-size:16px}
+.page_num ul li:first-child{border-left:0}
+.page_num ul li h2{font-size:50px}
+.page_num ul li label{display:block;width:30px;height:3px;background:#fcc442;margin:20px auto}
+.div_tag{margin-top:-50px;text-align:center}
+.div_tag ul{white-space:nowrap;overflow:hidden;overflow-x:auto}
+.div_tag ul li{display:inline-block;padding:0 20px;border-left:1px solid #ddd;font-size:16px}
+.div_tag ul li:first-child{border-left:0}
+.div_tag ul li a{color:#333}
+.div_tag ul li a:hover,.div_tag ul li.on a{color:#00b0a0}
+.div_work{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/work.jpg) no-repeat center center;background-size:cover;padding-top:1px}
+.course_owl{padding-bottom:60px;width:95%;margin:0 auto;margin-top:50px;position:relative}
+.course_owl .text{padding:15px;background:#fff}
+.course_owl .text h3{font-size:18px;padding-left:15px;border-left:5px solid #00b0a0;font-weight:400;margin-bottom:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.course_owl .text p{padding-right:50px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon8.png) no-repeat right center;margin-bottom:15px;color:#666}
+.course_owl a:hover .text{background:#00b0a0}
+.course_owl a:hover .text h3{color:#fff;border-color:#fcc442}
+.course_owl a:hover .text p{color:#fff;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon8-1.png) no-repeat right center}
+.course_owl .cur{top:32%}
+.hot_list ul{overflow:hidden;padding-right:35%;position:relative;margin:20px -10px}
+.hot_list ul li{width:33.33%;float:left}
+.hot_list ul li a{display:block;margin:10px;position:relative}
+.hot_list ul li a:hover img{transform:scale(1.1)}
+.hot_list ul li .img{overflow:hidden}
+.hot_list ul li a:hover .text{height:100%;background:rgba(0,176,160,.7)}
+.hot_list ul li a:hover .text p{transform:translateY(150%);text-align:center}
+.hot_list ul li a:hover .text span{display:block;margin:0 auto;float:none;height:20px}
+.hot_list ul li .text{position:absolute;height:40px;bottom:0;right:0;left:0}
+.hot_list ul li .text span{display:inline-block;width:31px;height:14px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon5.png) no-repeat center center;float:right;height:40px}
+.hot_list ul li img{width:100%;display:block}
+.hot_list ul li .text{line-height:40px;padding:0 20px;font-size:16px;color:#fff;background:rgba(0,0,0,.4)}
+.hot_list ul .li_more a{position:static}
+.hot_list ul .li_more{height:100%;position:absolute;top:0;right:0;width:34.5%}
+.hot_list ul .li_more .text{height:auto;display:block;padding-right:0;left:10px;right:10px;bottom:10px;top:100%;background:#00b0a0}
+.hot_list ul .li_more .text .cell{position:relative;height:100%;vertical-align:middle}
+.hot_list ul .li_more .text .cell p{position:absolute;top:50%;left:0;margin-top:-20px}
+.hot_list ul .li_more .text span{height:100%;width:88px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon6.png) no-repeat center center #fcc442}
+.hot_list ul li.li_more a:hover .text{height:auto;background:#00b0a0}
+.hot_list ul li.li_more a:hover .text p{transform:translateY(0);text-align:left}
+.hot_list ul li.li_more a:hover .text span{display:block;margin-right:0;width:100px;float:none;height:100%}
+.div_about .img{position:absolute;top:0;left:50%;width:50%;bottom:0}
+.div_about .img img{opacity:0}
+.div_about .about{position:relative;padding:60px 0;margin-top:-30px;background:#f3f3f3}
+.div_about .tit{width:30%;margin-left:50px;padding:20px;position:relative;z-index:1;padding-bottom:0}
+.div_about .tit h3{font-size:24px;line-height:40px;background:#f3f3f3;font-weight:400;color:#222}
+.div_about .tit:after{content:'';display:block;width:78px;height:78px;border:3px solid #febb43;top:0;left:0;position:absolute;z-index:-1}
+.div_about .text{max-width:95%;width:950px;box-sizing:border-box;padding:40px 50px;color:#fff;background:#00b0a0;line-height:32px;padding-bottom:50px}
+.div_about .text p{text-align:justify;text-indent:2em}
+.div_about .btn a{float:right;margin-top:20px}
+.btn a{display:inline-block;width:209px;line-height:50px;background:#fcc442;text-align:center}
+.btn a:hover{background:#ffb200}
+.btn a:hover span{padding-right:62px}
+.btn a span{display:inline-block;padding-right:52px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon7.png) no-repeat right center;font-size:16px;text-transform:uppercase;text-align:center}
+.team_owl{position:relative;background:url(../image/team_wap.jpg) no-repeat center bottom;height:533px;padding-top:30px}
+.team_owl .box{background:#fff;padding:0 20px;padding-bottom:30px}
+.team_owl .box .tit{padding:25px 0;border-bottom:1px solid #ddd}
+.team_owl .box .tit h3{padding-left:15px;border-left:5px solid #00b0a0;font-size:24px;color:#333;font-weight:400}
+.team_owl .box .tit span{display:block;float:right;color:#00b0a0;font-size:20px}
+.team_owl .box .text p{line-height:32px;color:#333;padding:20px 0}
+.team_owl .btn{margin-top:-25px;float:left;width:100%;text-align:center}
+.team_owl .item{width:610px;margin:0 auto;max-width:90%;padding-top:230px}
+.team_bg{display:none}
+.div_news .wrap{margin-top:-30px;margin-bottom:30px}
+.div_news .news_lt{width:38%;background:#f5f5f5;height:500px;overflow:hidden}
+.div_news .item{line-height:32px;color:#666}
+.div_news .item img{display:block}
+.div_news .item .text p{color:#666;height:64px;overflow:hidden}
+.div_news .item .text h3{color:#333;background:no-repeat 80% center}
+.div_news .item a:hover .text h3{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon5.png) no-repeat 95% center}
+.news_lt .text{padding:20px}
+.news_lt .text h3{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:16px;color:#333;font-weight:400}
+.div_news .news_rt{width:61%}
+.news_rt ul li a{color:#333;display:block;padding:15px 0;position:relative}
+.news_rt ul li a:after{z-index:-1;content:'';display:block;position:absolute;width:1px;top:0;bottom:0;background:#ddd;left:91px}
+.news_rt ul li a:hover{background:#00b0a0}
+.news_rt ul li a:hover .date label,.news_rt ul li a:hover .date span,.news_rt ul li a:hover .text p{color:#fff}
+.news_rt ul li a:hover .text h3{color:#fcc442}
+.news_rt ul li a:hover .text:after{background:#fcc442}
+.news_rt ul li a:hover:after{background:#00b0a0}
+.news_rt ul li .date{font-size:12px;line-height:20px;float:left;width:75px;margin-right:15px;text-align:right}
+.news_rt .date span{display:block;font-size:20px;margin-bottom:5px;color:#999}
+.news_rt .text{padding:0 20px;overflow:hidden;position:relative}
+.news_rt .text:after{content:'';display:block;width:3px;left:0;background:#00b0a0;top:0;position:absolute;height:20px}
+.news_rt .text h3{line-height:20px;margin-bottom:10px;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:400}
+.link_owl{margin-top:-40px;margin-bottom:40px;position:relative}
+.link_owl .list{overflow:hidden;border-left:1px solid #ddd;border-bottom:1px solid #ddd}
+.link_owl .list ul li{width:16.6667%;float:left}
+.link_owl .list ul li a{background:#fff;display:block;border:1px solid #ddd;margin-left:-1px;margin-bottom:-1px;line-height:100px;text-align:center}
+.link_owl .list ul li img{vertical-align:middle;display:inline-block}
+.title{position:relative;text-align:center;margin:80px 0}
+.title h3{font-size:32px;font-weight:400;color:#222;position:relative;z-index:9}
+.title.on span{color:#e0e0e0}
+.title label{display:block;margin:0 auto 0;height:3px;width:60px;background:#00b0a0;margin-top:15px}
+.title span{display:block;font-size:60px;color:#f1f1f1;text-transform:uppercase;position:absolute;bottom:10px;left:0;width:100%}
+.class_nav{padding:8px 0;border:1px solid #ddd}
+.class_nav ul li{float:left;margin-left:20px;width:120px;line-height:34px;text-align:center;font-size:16px}
+.class_nav ul li a{display:block;color:#002}
+.class_nav ul li a:hover,.class_nav ul li.on a{color:#fff;background:#00b0a0}
+.curriculum_list{padding:5px 0}
+.curriculum_list ul{margin:0 -1.5%}
+.curriculum_list ul li{float:left;width:22%;margin:25px 1.5%}
+.curriculum_list ul li *{transition:all .5s}
+.curriculum_list ul li .img_box{position:relative}
+.curriculum_list ul li .img_box img{display:block;width:100%}
+.curriculum_list ul li .img_box .curriculum_list_mb{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,176,160,.9);opacity:0}
+.curriculum_list ul li .img_box .curriculum_list_more{position:absolute;left:0;width:100%;top:50%;margin-top:-8px;text-align:center}
+.curriculum_list ul li .img_box .curriculum_list_more span{display:inline-block;font-size:16px;color:#fff;padding-right:50px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon1.png) no-repeat right center}
+.curriculum_list ul li .web{margin-top:22px}
+.curriculum_list ul li .web p{font-size:16px;color:#333}
+.curriculum_list ul li .web p span{float:right;color:#00b0a0}
+.curriculum_list ul li .web p span em{font-style:normal;font-size:12px}
+.curriculum_list ul li:hover .curriculum_list_mb{opacity:1}
+.page_size{text-align:center;margin-top:10px}
+.page_size a{display:inline-block;width:20px;line-height:16px;height:16px;padding-bottom:8px;border:1px solid transparent;color:#999;margin:0 10px;vertical-align:top}
+.page_size a.next,.page_size a.prev{width:fit-content;padding-bottom:0;border-bottom:none}
+.page_size a.prev{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon2.png) no-repeat center center}
+.page_size a.on,.page_size a:hover{border-bottom:1px solid #ddd;color:#222}
+.page_size a.prev:hover{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon2-1.png) no-repeat center center;border-bottom:none}
+.footer{padding:40px 0 55px}
+.footer h3{font-weight:400;font-size:20px}
+.footer p{font-size:14px;color:#fff;margin-top:25px}
+.footer .left{float:left}
+.footer .left h3{color:#fcc442}
+.footer .left p a{color:#fff;margin:0 12px}
+.footer .left p a:first-child{margin-left:0}
+.footer .right{float:right;text-align:right}
+.footer .right h3{color:#fff}
+.footer .right h3 span{color:#fcc442}
+.curriculum_article{padding-bottom:40px}
+.curriculum_article .img{float:left;margin-right:2%;width:37%}
+.curriculum_article .img img{display:block;width:100%}
+.curriculum_article .web{float:left;width:60%}
+.curriculum_article .web .tit{margin-top:45px;background:#fff;padding:11px 0;position:relative}
+.curriculum_article .web .tit h3{font-size:24px;font-weight:400;color:#333}
+.curriculum_article .web .tit p{font-size:16px;color:#999;margin-top:10px}
+.curriculum_article .web .tit p span{margin-left:50px}
+.curriculum_article .web .tit .line{width:104px;height:104px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon4.png) no-repeat center center;position:absolute;top:50%;margin-top:-52px;left:-60px}
+.curriculum_article .web .text{margin-top:50px}
+.curriculum_article .web .text h4{font-size:16px;font-weight:400;color:#333;line-height:32px}
+.curriculum_article .web .text p{line-height:32px;color:#666;text-indent:2em}
+.about_gsjj .list{border-top:1px solid #ddd;padding-top:50px;margin-top:45px}
+.about_gsjj .list:first-child{border-top:none;margin-top:20px}
+.about_gsjj .list .img{float:right;margin-left:80px}
+.about_gsjj .list .img img{display:block;width:100%}
+.about_gsjj .list .web{overflow:hidden}
+.about_gsjj .list .web h3{font-size:22px;font-weight:400}
+.about_gsjj .list .web .text{margin-top:30px}
+.about_gsjj .list .web .text p{line-height:32px;color:#333}
+.his_owl{max-width:900px;width:95%;margin:0 auto}
+.his_owl .item{cursor:pointer;margin-bottom:10px;border-bottom:1px solid #ddd;text-align:center;padding-top:105px;position:relative}
+.his_owl .item span{display:block;line-height:50px;position:absolute;left:0;width:100%;bottom:10px;text-align:center;font-size:26px}
+.his_owl .item:after{display:block;width:8px;height:8px;border-radius:100%;border:1px solid #9d9d9d;margin:0 auto;content:'';position:absolute;bottom:-5px;left:0;right:0;margin:0 auto;background:#fff}
+.his_owl .item span:after{content:'';display:block;width:1px;height:0;background:#00b0a0;margin:0 auto}
+.his_owl .item.on span,.his_owl .item:hover span{font-size:34px;color:#00b0a0}
+.his_owl .item.on span:after,.his_owl .item:hover span:after{height:20px}
+.his_owl .item.on:after,.his_owl .item:hover:after{background:#00b0a0;border-color:#00b0a0}
+.his_owl .owl-theme .owl-controls .owl-nav [class*=owl-]{width:24px;height:24px;border-radius:100%;border:1px solid #9b9b9b;margin:0;padding:0;position:relative}
+.his_owl .owl-theme .owl-controls .owl-nav .owl-prev{float:left;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon9.png) no-repeat center center #fff}
+.his_owl .owl-theme .owl-controls .owl-nav .owl-prev:after{content:'';display:block;width:20px;height:1px;background:#ddd;position:absolute;left:100%;top:14px}
+.his_owl .owl-theme .owl-controls .owl-nav .owl-next{float:right;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon10.png) no-repeat center center #fff}
+.his_owl .owl-theme .owl-controls .owl-nav .owl-next:after{content:'';display:block;width:20px;height:1px;background:#ddd;position:absolute;right:100%;top:14px}
+.his_owl .owl-theme .owl-controls{left:-5%;right:-5%;width:auto}
+.div_his .list{max-width:580px;margin:31px auto;line-height:30px;position:relative}
+.div_his .list:before{content:"";display:block;width:1px;top:10px;left:64px;bottom:-10px;background:#ececec;position:absolute}
+.div_his .list li{padding-bottom:20px;font-size:16px;color:#666}
+.div_his .list li:hover .mouth span:after{background:#00b0a0}
+.div_his .list li:hover .mouth span{color:#00b0a0}
+.div_his .list li:last-child{float:left}
+.div_his .list .mouth{width:50px;text-align:right;float:left;margin-right:110px;position:relative}
+.div_his .list .mouth span:after{content:'';position:absolute;top:50%;margin-top:-5px;right:-20px;display:block;width:10px;height:10px;background:#999;float:right;border-radius:100%}
+.div_his .list .mouth span{display:block;position:relative}
+.div_his .list .text{overflow:hidden}
+.div_his .list .text span{display:block;width:75px;float:left}
+.div_his .list .text p{overflow:hidden}
+.team1_list ul li .img{float:right;width:247px}
+.team1_list ul li{overflow:hidden;margin-top:40px;position:relative}
+.team1_list ul li:after{content:'';z-index:-1;display:block;width:1px;height:400px;top:60px;bottom:20px;left:25px;background:#ccc;position:absolute}
+.team1_list ul li:before{content:'';z-index:1;display:block;width:1px;top:60px;height:0;bottom:20px;left:25px;background:#00b0a0;position:absolute}
+.team1_list ul li .text{overflow:hidden;line-height:32px;color:#666}
+.team1_list ul li .text h3{font-size:18px;color:#222;font-weight:400;padding:20px 0}
+.team1_list ul li .text h3 span{color:#666;font-size:14px;display:inline-block;padding-left:20px}
+.team1_list ul li .box{max-width:675px;width:80%;margin:0 auto}
+.team1_list ul li .span_num{z-index:2;position:absolute;top:0;display:block;font-size:46px;color:#ccc}
+.team1_list ul li:nth-child(2n) .img{float:left}
+.team1_list ul li:nth-child(2n) .span_num{left:auto;right:0}
+.team1_list ul li:nth-child(2n):after{left:auto;right:25px}
+.team1_list ul li:nth-child(2n):before{left:auto;right:25px}
+.team1_list ul li:hover:before{height:350px}
+.team1_list ul li:hover .span_num{color:#00b0a0}
+.zxns_list{margin-top:40px}
+.zxns_list .tit{cursor:pointer;line-height:60px;border-bottom:1px solid #ddd}
+.zxns_list .tit h3{font-size:16px;font-weight:400;color:#222;padding-left:20px}
+.zxns_list .tit label{display:block;color:#ccc;text-transform:uppercase;float:right;padding-right:30px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon11-1.png) no-repeat right center}
+.zxns_list li{margin-top:10px}
+.zxns_list li.on .tit label{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon11.png) no-repeat right center}
+.zxns_list .text{display:none;transition:all 0s;padding:20px;line-height:32px;color:#666}
+.zxns_list .text h4{line-height:16px;margin:8px 0;color:#333;padding-left:10px;font-weight:400;border-left:4px solid #00b0a0}
+.zxns_list .text .list{margin-bottom:40px}
+.zxns_list .text .list:last-child{margin-bottom:0}
+.qyry_list .tit{padding:50px 0;font-size:16px;color:#222}
+.qyry_list .tit h3{font-size:20px;margin-bottom:25px}
+.qyry_list li{width:50%;float:left;margin-top:40px}
+.qyry_list ul{overflow:hidden}
+.qyry_list li:nth-child(2n+1){clear:both}
+.qyry_list li .img{float:left;padding:10px;width:226px;margin-right:20px;background:#fff;border:1px solid #ccc;line-height:155px;overflow:hidden;text-align:center}
+.qyry_list li .img img{vertical-align:middle;max-width:100%;max-height:155px}
+.qyry_list li .text{overflow:hidden;line-height:32px;font-size:16px;color:#666;padding-right:50px}
+.qyry_list li .text p{max-width:265px}
+.qyry_list li .text h3{font-size:20px;font-weight:400;color:#222;padding:15px 0}
+.team2_list ul li{width:25%;float:left}
+.team2_list ul li a{display:block;margin:18px;border:1px solid #f3f3f3}
+.team2_list ul li:nth-child(4n+1){clear:both}
+.team2_list ul li .img{overflow:hidden;background:#000}
+.team2_list ul li img{display:block}
+.team2_list ul li a:hover h3{color:#00b0a0}
+.team2_list ul li a:hover img{transform:scale(1.1);opacity:.8}
+.team2_list ul{overflow:hidden;margin:20px -18px}
+.team2_list .text{padding:20px;position:relative}
+.team2_list .text span{display:block;position:absolute;width:50px;height:50px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon8-1.png) no-repeat center center #00b0a0;top:-25px;right:20px}
+.team2_list a:hover .text span{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon8.png) no-repeat center center #fcc442}
+.team2_list .text h3{font-size:16px;color:#222;margin-bottom:15px;font-weight:400}
+.team2_list .text p{color:#999}
+.modal{display:none;transition:all 0s;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:1001}
+.fp_modal{position:fixed;top:0;left:0;width:100%;height:100%;display:table}
+.fp_modal .cell{display:table-cell;vertical-align:middle}
+.modal_cont{max-width:1080px;width:90%;margin:0 auto;background:#fff;padding:50px;position:relative}
+.modal_cont .img{width:345px;float:left;margin-right:40px}
+.modal_cont .tit{border-bottom:1px solid #ddd;line-height:24px;padding:20px 0}
+.modal_cont .tit h3{font-size:24px;font-weight:400;padding-left:15px;border-left:5px solid #00b0a0}
+.modal_cont .tit h3 span{float:right;display:block;color:#00b0a0;font-size:20px}
+.modal_cont .text{overflow:hidden;line-height:32px;color:#666}
+.modal_cont .text h4{font-weight:400;font-size:16px;color:#333}
+.modal_cont .text p{text-indent:2em;margin-bottom:20px}
+.modal_cont .close{position:absolute;width:60px;height:60px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/close.png) no-repeat center center #666;border-radius:100%;top:-30px;right:-30px;cursor:pointer}
+.modal_cont .close:hover{background-color:#333}
+.modal_cont .text .box{height:327px;overflow-y:auto;margin-top:20px}
+.course_owl ul{margin:0 -10px;overflow:hidden}
+.course_owl ul li{width:25%;float:left}
+.course_owl ul li a{margin:10px;border:1px solid #f3f3f3;display:block}
+.course_owl img{display:block}
+.course_owl.wow_list{margin:20px 0;width:100%}
+.div_pos{line-height:42px;background:#f3f3f3;color:#999}
+.div_pos a{color:#999}
+.div_pos a:hover{color:#00b0a0}
+.div_pos span{display:block;float:right;display:none}
+.div_pos span a{display:block;width:20px;height:42px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon12.png) no-repeat center center}
+.details{margin-top:30px;line-height:36px;color:#666}
+.details h4{font-weight:400;color:#222}
+.details .img{margin-top:15px;text-align:center}
+.details_tit{text-align:center;padding:20px 0;border-bottom:1px solid #f3f3f3;margin-bottom:20px;color:#999}
+.details_tit h2{font-size:24px;font-weight:400;margin-bottom:10px;color:#222}
+.details_cur{line-height:40px;border-top:1px solid #f3f3f3;margin-top:40px}
+.details_cur span{max-width:48%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.details_cur span a{color:#999}
+.details_cur span a:hover{color:#00b0a0}
+.details_cur:after{content:'';display:block;clear:both}
+.news2_list{margin-top:30px}
+.news2_list ul li a{color:#333;display:block;padding:15px 0;position:relative}
+.news2_list ul li a:after{z-index:-1;content:'';display:block;position:absolute;width:1px;top:0;bottom:0;background:#ddd;left:181px}
+.news2_list ul li a:hover{background:#00b0a0}
+.news2_list ul li a:hover .date label,.news2_list ul li a:hover .date span,.news2_list ul li a:hover .text p{color:#fff}
+.news2_list ul li a:hover .text h3{color:#fcc442}
+.news2_list ul li a:hover .text:after{background:#fcc442}
+.news2_list ul li a:hover:after{background:#00b0a0}
+.news2_list ul li .img{float:right;margin:0 20px}
+.news2_list ul li:after{content:'';display:block;clear:both}
+.news2_list ul li .date{font-size:16px;line-height:40px;float:left;width:150px;margin-right:30px;text-align:right}
+.news2_list .date span{display:block;font-size:40px;color:#999}
+.news2_list .text{line-height:32px;padding:0 20px;overflow:hidden;position:relative}
+.news2_list .text:after{content:'';display:block;width:3px;left:0;background:#00b0a0;top:0;position:absolute;height:20px}
+.news2_list .text h3{line-height:20px;margin-bottom:10px;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:400}
+.news2_list .text p{height:64px;overflow:hidden}
+.contact{margin-top:100px;margin-bottom:50px}
+.contact .img{width:495px;float:left;margin-right:50px}
+.cont_rt{overflow:hidden}
+.contact_box{background:#fff;margin-bottom:20px}
+.contact_box .tit{line-height:50px;height:40px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon21.png) no-repeat left center;text-align:left}
+.contact_box .tit h3{font-size:20px;display:inline-block;padding-left:10px;height:20px;border-left:5px solid #00b0a0;line-height:20px;font-weight:400;margin-top:10px}
+.contact_box ul{margin:0 -1.5%}
+.contact_box ul li{width:30.333%;float:left;margin:0 1.5%;margin-bottom:15px}
+.contact_box ul li span{display:block;padding-left:10px;color:#888;line-height:35px}
+.contact_box .div_input{line-height:40px;border:1px solid #ddd;border-radius:3px;padding:0 15px}
+.div_input input{width:100%;border:0;background:0 0}
+.div_input textarea{height:100px;width:100%;border:0;background:0 0;resize:none;padding:5px 0}
+.contact_box ul li.li_last{width:97%}
+.contact_box .btn1 a{border:0;display:inline-block;width:200px;text-align:center;line-height:40px;background:#00b0a0;color:#fff;border-radius:3px;font-size:16px}
+.contact_box .btn1 a:hover{color:#fff;background:#00988a}
+.contact_box .btn1{width:auto;text-align:center;text-align:left}
+.contact_box .btn1 span{display:inline-block;padding-right:25px;color:#fff;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon23.png) no-repeat right center}
+.contact_box .btn1 a:hover span{color:#fff}
+.c_list ul li:hover{transform:translateY(-20px)}
+.c_list ul li{line-height:32px;color:#222;font-size:18px;width:27.333%;margin:0 3%;float:left;text-align:center}
+.c_list ul li p{font-size:16px;color:#666}
+.c_list ul li h4{font-size:18px;font-weight:400}
+.c_list ul li .img{overflow:hidden;width:120px;height:120px;border-radius:120px;position:relative;margin:0 auto}
+.c_list ul li .img .i1{position:absolute;top:32px;left:57px;width:32px;height:27px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon16.png) no-repeat center center;display:block}
+.c_list ul li .img .i2{position:absolute;top:61px;left:30px;width:27px;height:11px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon17.png) no-repeat center center;display:block}
+.c_list ul li .img .i3{position:absolute;top:41px;left:51px;width:20px;height:20px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/icon18.png) no-repeat center center;display:block}
+.c_list ul{margin:0 -3%;overflow:hidden;padding:20px 0}
+@media only screen and (max-width:1400px){.banner .item .text{font-size:25px}
+}
+@media only screen and (max-width:1200px){.wrap{width:95%;margin:0 auto}
+	.header .nav ul li{margin-left:20px}
+	.banner .item .text{font-size:18px}
+	.banner .item .text h2{line-height:1.5em}
+	.page_num ul li h2{font-size:40px}
+	.banner .owl-carousel .owl-item img{width:120%;margin-left:-10%;max-width:initial}
+	.title{margin:60px 0}
+	.owl-carousel .owl-item .img{overflow:hidden}
+}
+@media only screen and (max-width:1100px){.curriculum_article .web .text,.curriculum_article .web .tit{margin-top:30px}
+}
+@media only screen and (max-width:800px){.page_num ul li h2{font-size:30px}
+	.page_num ul li{width:50%}
+	.page_num ul li:nth-child(2n+1){border-left:0}
+	.hot_list ul li{width:50%}
+	.hot_list ul{padding-right:0}
+	.hot_list ul .li_more{position:initial;top:auto;left:auto;right:auto;bottom:auto;width:100%}
+	.hot_list ul .li_more .text{position:initial;top:auto;left:auto;right:auto;bottom:auto;height:80px}
+	.div_news .news_lt,.div_news .news_rt{width:100%;float:none;margin-bottom:20px}
+	.link_owl .list ul li{width:25%}
+	.footer .left p a{margin:0 5px}
+	.class_nav ul li{display:inline-block;float:none;margin:0 5px;width:auto}
+	.class_nav ul li a{padding:0 10px}
+	.curriculum_list ul li{width:47%}
+	.about_gsjj .list .img{float:none;margin:0 auto;margin-bottom:20px}
+	.about_gsjj .list:first-child{padding-top:0}
+	.team2_list ul li{width:50%}
+	.team2_list ul li img{width:100%}
+	.course_owl ul li{width:50%}
+	.course_owl ul li:nth-child(2n+1){clear:both}
+	img{width:100%}
+	.contact .img{float:none;margin-bottom:30px}
+	.contact{margin-top:30px;margin-bottom:10px;overflow:hidden}
+	.c_list{overflow:hidden}
+	.modal_cont{box-sizing:border-box}
+	.modal_cont .img{width:300px;margin-right:20px}
+	.modal_cont{padding:20px}
+	.modal_cont .text .box{height:273px}
+	.news2_list ul li .img{margin:0 auto}
+	.qyry_list li{width:100%}
+	.curriculum_article .img{width:100%;margin:20px auto}
+	.curriculum_article .web .tit{margin-left:50px}
+	.curriculum_article .web{width:100%}
+}
+.footer .left p a:hover{color:#fcc442}
+.div_news .item .text a:hover h3{color:#00b0a0}
+.link_owl .list ul li a:hover img{opacity:.6}
+.link_owl .list ul li a:hover{background:#f7f8f9}
+@media only screen and (max-width:750px){.nav{position:fixed;top:58px;left:-100%;width:100%;height:100%;background:#fff}
+	.header .nav ul li{float:none;margin:0 20px}
+	.header{line-height:58px;height:58px}
+	.nav_wap{position:absolute;top:50%;margin-top:-20px;width:40px;height:40px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/menu.png) no-repeat center center #00b0a0;background-size:auto 25px;right:5px}
+	.h_menu .nav_wap{background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/menu-1.png) no-repeat center center #00b0a0;background-size:auto 25px}
+	.h_menu .nav{left:0}
+	.title span{font-size:30px}
+	.title h3{font-size:30px}
+	.div_news .news_lt{height:auto}
+	.banner .item .text{font-size:14px;margin-top:-35px}
+	.banner .item .text h2{font-size:2em}
+	.banner .owl-carousel .owl-item .img img{width:150%;margin-left:-25%}
+	.mainer{margin-top:58px}
+	.banner_cur{display:none}
+	.owl.owl-theme .owl-dots .owl-dot span{margin:0 10px}
+	.cur span{width:40px;height:40px}
+	.div_tag ul li{padding:0 5px}
+	.title{margin:40px 0}
+	.div_tag{margin-top:-10px}
+	.hot_list ul li a{margin:5px}
+	.div_about .about{margin-top:0}
+	.div_about .tit{width:auto}
+	.div_about .img{width:100%;left:0;opacity:.2}
+	.div_about .text{max-width:initial;width:95%;margin:0 auto}
+	.div_about .text{padding:15px;line-height:25px;padding-top:20px}
+	.div_about .tit h3{background:0 0;position:relative;z-index:2}
+	.div_about .tit:before{content:'';display:block;position:absolute;left:80px;height:24px;top:50%;margin-top:-2px;width:5px;background:#fff;z-index:1}
+	.div_about .btn a{float:none}
+	.team_cur{top:auto;bottom:70px}
+	.team_owl .item{width:95%;max-width:initial;padding-top:10px}
+	.team_owl{background:0 0;padding-bottom:28px}
+	.link_owl .list ul li{width:50%}
+	.link_owl .list ul li img{width:auto}
+	.footer .left,.footer .right{float:none;text-align:center}
+	.footer .left{margin-bottom:20px}
+	.footer p{margin-top:10px}
+	.footer{padding:20px 0}
+	.class_nav{padding:5px 10px}
+	.class_nav ul{margin:0 -1%}
+	.class_nav ul li{font-size:14px;display:block;float:left;width:31.333%;margin:5px 1%}
+	.class_nav ul li a{padding:0 10px}
+	.team2_list ul li a{margin:5px}
+	.team2_list ul{margin:10px 0}
+	.modal_cont .img{width:150px;float:none}
+	.modal_cont .close{width:40px;height:40px;background:url(http://demoall.rrzcms.com/54/public/template/pc/skin/images/close.png) no-repeat center center #666;background-size:20px auto;top:-20px;right:-10px}
+	.team2_list .text span{width:40px;height:40px}
+	.course_owl .text h3{font-size:16px;padding-left:10px;margin-bottom:10px}
+	.course_owl ul li a{margin:5px}
+	.course_owl .text{padding:10px}
+	.news2_list ul li .img{width:100%;float:none}
+	.news2_list ul li .date{width:auto;float:left}
+	.news2_list .date label{float:right}
+	.news2_list .date span{float:right;font-size:16px;color:#666}
+	.news2_list .date span:before{content:'-'}
+	.news2_list .date:after{content:'';display:block;clear:both}
+	.news2_list .text{clear:both;padding:0 10px;line-height:25px}
+	.news2_list .text h3{margin-bottom:10px}
+	.news2_list ul li a:after{display:none}
+	.details_tit h2{font-size:20px}
+	.details_tit{padding-top:0}
+	.details{line-height:25px}
+	.details_cur span{float:none;display:block;min-width:initial;max-width:100%}
+	.contact_box ul li{width:97%}
+	.c_list ul li{width:100%;float:none;margin:0 auto;clear:both}
+	.c_list ul{margin:0 auto;padding:0;overflow:initial}
+	.c_list ul li .img{float:left;margin-right:10px;transform:scale(.7);-webkit-transform:scale(.7)}
+	.c_list ul li .text{overflow:hidden;text-align:left;padding-top:25px}
+	.news2_list .text p{height:auto}
+	.div_his .list .mouth{margin-right:40px}
+	.div_his .list li{font-size:14px;line-height:25px}
+	.qyry_list li .img{width:150px;line-height:110px}
+	.qyry_list li{margin-top:20px}
+	.qyry_list li .text{padding-right:0;font-size:14px;line-height:25px}
+	.team1_list ul li .img{float:none}
+	.team1_list ul li .span_num{right:0}
+	.team1_list ul li .box{width:100%}
+	.team1_list ul li:after,.team1_list ul li:before{right:25px;left:auto}
+	.team1_list ul li:after{height:266px}
+	.team1_list ul li:hover:before{height:266px}
+	.team1_list ul li:nth-child(2n) .img{float:none}
+	.team1_list ul li .text h3{padding:10px 0}
+	.team1_list ul li .text{line-height:25px}
+	.team_bg{display:block}
+}
+.footer{position:relative;z-index:100}
+.radio-i{width:fit-content!important}
+.radio-i span{display:inline-block!important;padding-left:0!important}
